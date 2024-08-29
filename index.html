@@ -219,21 +219,18 @@
         var salesIQFieldsArray = [];</script>
     <script>
         console.log("test")
-        var abc = setInterval(() => {
-            console.log("v1")
-            window.addEventListener('message', function (event) {
-                console.log(event)
-                if (event.data.utm_medium || event.data.utm_source) {
-                    const leadSource = document.getElementById('lead_source');
-                    const horecaExperts = document.getElementById('horeca_experts');
-                    if (leadSource || horecaExperts) {
-                        leadSource.value = event.data.utm_medium || "";
-                        horecaExperts.value = event.data.utm_source || "";
-                    }
+        window.postMessage({utm_medium: "horeca_referral", utm_source:"johndoe"})
+        window.addEventListener('message', function (event) {
+            console.log(event)
+            if (event.data.utm_medium || event.data.utm_source) {
+                const leadSource = document.getElementById('lead_source');
+                const horecaExperts = document.getElementById('horeca_experts');
+                if (leadSource || horecaExperts) {
+                    leadSource.value = event.data.utm_medium || "";
+                    horecaExperts.value = event.data.utm_source || "";
                 }
-            });
-            
-        }, 500)
+            }
+        });
     </script>
 </body>
 
