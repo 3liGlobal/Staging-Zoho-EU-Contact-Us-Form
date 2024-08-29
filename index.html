@@ -219,9 +219,7 @@
         var salesIQFieldsArray = [];</script>
     <script>
         console.log("test")
-        window.postMessage({utm_medium: "horeca_referral", utm_source:"johndoe"})
         window.addEventListener('message', function (event) {
-            console.log(event)
             if (event.data.utm_medium || event.data.utm_source) {
                 const leadSource = document.getElementById('lead_source');
                 const horecaExperts = document.getElementById('horeca_experts');
