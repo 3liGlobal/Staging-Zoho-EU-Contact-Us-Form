@@ -5,6 +5,7 @@
     <title>Contact&#x20;Us&#x20;Test&#x20;Version</title>
     <link href="css/form.css" rel="stylesheet" type="text/css">
     <script src="js/validation.js"></script>
+    <script src="js/prefilling.js"></script>
 </head>
 
 <body class="zf-backgroundBg">
@@ -217,6 +218,7 @@
         var isSalesIQIntegrationEnabled = false;
         var salesIQFieldsArray = [];</script>
     <script>
+        console.log("test")
         window.addEventListener('message', function (event) {
             console.log(event)
             if (event.data.utm_medium || event.data.utm_source) {
