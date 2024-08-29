@@ -1,4 +1,6 @@
 window.addEventListener('message', function (event) {
+    console.log("test")
+    console.log(event)
     if (event.data.utm_medium || event.data.utm_source) {
         const leadSource = document.getElementById('lead_source');
         const horecaExperts = document.getElementById('horeca_experts');
