@@ -191,7 +191,7 @@ ul {
 .zf-tempContDiv textarea,
 .zf-tempContDiv .zf-pdfTextArea {
   background: #fff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d2d2d2;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
@@ -201,14 +201,14 @@ ul {
 
 .zf-tempContDiv input[type="text"]:hover,
 .zf-tempContDiv textarea:hover {
-  border: 1px solid rgba(157, 157, 157, 0.75) !important;
+  border: 1px solid #d2d2d2 !important;
 }
 .zf-tempContDiv input[type="text"]:focus,
 .zf-tempContDiv textarea:focus {
-  border: 1px solid rgba(121, 187, 238, 0.75) !important;
-  -webkit-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
+  border: 1px solid #d2d2d2 !important;
+  /* -webkit-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
   -moz-box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
-  box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important;
+  box-shadow: 0 0 5px rgba(82, 168, 236, 0.5) !important; */
 }
 
 .zf-tempContDiv textarea {
@@ -311,8 +311,9 @@ ul {
 .zf-form-sBox {
   color: #444444;
   padding: 4px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #d2d2d2;
   font-size: 13px;
+  outline: none;
 }
 
 .zf-name .zf-tempContDiv span,
