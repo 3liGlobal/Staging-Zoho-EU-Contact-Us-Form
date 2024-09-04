@@ -2,8 +2,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact&#x20;Us&#x20;Test&#x20;Version</title>
     <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">  
     <script src="js/validation.js"></script>
 </head>
 
@@ -20,13 +24,7 @@
             <input type="hidden" name="zc_gad"
                 value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
             <div class="zf-templateWrapper"><!---------template Header Starts Here---------->
-                <ul class="zf-tempHeadBdr">
-                    <li class="zf-tempHeadContBdr">
-                        <h2 class="zf-frmTitle"><em>Contact Us Test Version</em></h2>
-                        <p class="zf-frmDesc"></p>
-                        <div class="zf-clearBoth"></div>
-                    </li>
-                </ul><!---------template Header Ends Here---------->
+                <!---------template Header Ends Here---------->
                 <!---------template Container Starts Here---------->
                 <div class="zf-subContWrap zf-topAlign">
                     <ul>
@@ -88,7 +86,7 @@
                                             isCountryCodeEnabled=false fieldType="11"
                                             id="international_PhoneNumber_countrycode" valType="number"
                                             phoneFormatType="1" placeholder="" />
-                                        <label>Number</label> </span>
+                                         </span>
                                     <div class="zf-clearBoth"></div>
                                 </div>
                                 <p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value
@@ -127,7 +125,7 @@
                                 <em class="zf-important">*</em>
                             </label>
                             <div class="zf-tempContDiv">
-                                <select class="zf-form-sBox" name="Dropdown" checktype="c1">
+                                <select class="zf-form-sBox" name="Dropdown" checktype="c1" name="" onchange="" onclick="return false;" id="">
                                     <option selected="true" value="-Select-">-Select-</option>
                                     <option value="Bar&#x2f;Cafe&#x2f;Restaurant">Bar&#x2f;Cafe&#x2f;Restaurant</option>
                                     <option value="Shisha&#x20;Lounge">Shisha Lounge</option>
@@ -193,9 +191,8 @@
                         <li class="zf-tempFrmWrapper zf-decesion ">
                             <div class="zf-tempContDiv">
                                 <input type="checkbox" checktype="c1" id="DecisionBox" name="DecisionBox" />
-                                <label for="DecisionBox" class="zf-labelName">I agree to theT&Cand the processing of my
-                                    data as described in theData and Cookie Policy. https://de.ooka.com/en/page/agb,
-                                    https://de.ooka.com/en/content/cookie-richtlinie
+                                <label for="DecisionBox" class="zf-labelName">I agree to the <a href="https://de.ooka.com/en/page/agb" target="_blank"> T&C </a>and the processing of my
+                                    data as described in the <a href="https://de.ooka.com/en/content/cookie-richtlinie" target="_blank">Data and Cookie Policy</a>.
                                     <em class="zf-important">*</em>
                                 </label>
                                 <p id="DecisionBox_error" class="zf-errorMessage" style="display:none;">Invalid value
@@ -206,7 +203,7 @@
                     </ul>
                 </div><!---------template Container Starts Here---------->
                 <ul>
-                    <li class="zf-fmFooter"><button class="zf-submitColor">Submit</button></li>
+                    <li class="zf-fmFooter"><button class="zf-submitColor">SUBMIT</button></li>
                 </ul>
             </div><!-- 'zf-templateWrapper' ends -->
         </form>
