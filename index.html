@@ -203,7 +203,7 @@
                     </ul>
                 </div><!---------template Container Starts Here---------->
                 <ul>
-                    <li class="zf-fmFooter"><button class="zf-submitColor">SUBMIT</button></li>
+                    <li class="zf-fmFooter"><button class="zf-submitColor" id="zf-submitColor">SUBMIT</button></li>
                 </ul>
             </div><!-- 'zf-templateWrapper' ends -->
         </form>
@@ -225,6 +225,15 @@
             }
         });
     </script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <script>
+            $('form').submit(function () {
+                $('#zf-submitColor').prop('disabled', true);
+                setTimeout(function () {
+                    $('#zf-submitColor').prop('disabled', false);
+                }, 5000);
+            });
+        </script>
 </body>
 
 </html>
