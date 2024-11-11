@@ -125,7 +125,7 @@
                                 <em class="zf-important">*</em>
                             </label>
                             <div class="zf-tempContDiv">
-                                <select class="zf-form-sBox" name="Dropdown4" checktype="c1">
+                                <select class="zf-form-sBox" name="Dropdown4" checktype="c1"  id="options" onchange="showField()">
                                     <option selected="true" value="Select">Select</option>
                                     <option value="Baden-W&uuml;rttemberg">Baden-W&uuml;rttemberg</option>
                                     <option value="Bayern">Bayern</option>
@@ -143,6 +143,7 @@
                                     <option value="Sachsen">Sachsen</option>
                                     <option value="Schleswig-Holstein">Schleswig-Holstein</option>
                                     <option value="Th&uuml;ringen">Th&uuml;ringen</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 <p id="Dropdown_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
                             </div>
